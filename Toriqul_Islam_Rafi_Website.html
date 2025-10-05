@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toriqul Islam Rafi | TL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul {
+            list-style: none;
+        }
+        h1,h2,h3,h4,h5 {
+            font-weight: 600;
+        }
+        header {
+            background-color: #1b1b2f;
+            color: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        header h1 {
+            font-size: 28px;
+            color: #ffd700;
+        }
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .hero {
+            height: 90vh;
+            background: linear-gradient(to right, #1b1b2f, #162447);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+        .hero a {
+            background-color: #ffd700;
+            color: #1b1b2f;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .hero a:hover {
+            background-color: #e6c200;
+        }
+        .about {
+            padding: 80px 50px;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+        .about img {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .about-content {
+            max-width: 600px;
+        }
+        .about-content h2 {
+            margin-bottom: 20px;
+            color: #1b1b2f;
+        }
+        .about-content p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .services {
+            padding: 80px 50px;
+            background-color: #f4f6f8;
+            text-align: center;
+        }
+        .services h2 {
+            margin-bottom: 50px;
+            color: #1b1b2f;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .service-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: #162447;
+        }
+        .service-card p {
+            line-height: 1.6;
+        }
+        .contact {
+            padding: 80px 50px;
+            background-color: #fff;
+        }
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #1b1b2f;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background-color: #1b1b2f;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #162447;
+        }
+        footer {
+            background-color: #1b1b2f;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        @media(max-width:768px){
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .about {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TL</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <h2>Hello, I'm Toriqul Islam Rafi</h2>
+        <p>Professional Personal & Business Services | Web Development, Consulting, Design, and More</p>
+        <a href="#contact">Get in Touch</a>
+    </section>
+    <section class="about" id="about">
+        <img src="https://via.placeholder.com/300x300.png?text=TL" alt="Toriqul Islam Rafi">
+        <div class="about-content">
+            <h2>About Me & Business</h2>
+            <p>Hi! I'm Toriqul Islam Rafi (TL). I provide professional personal and business services.  
+            With years of experience in consulting, design, and digital solutions, I help individuals and businesses achieve success online and offline.</p>
+            <p>My mission is to deliver high-quality, reliable, and innovative solutions. Whether you're looking for personal branding, business strategy, or web solutions, I've got you covered.</p>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2>Our Features & Services</h2>
+        <div class="service-grid">
+            <div class="service-card"><h3>Web Development</h3><p>Custom websites for personal and business needs, fully responsive and modern design.</p></div>
+            <div class="service-card"><h3>Brand Consulting</h3><p>Personal & business branding strategy to enhance visibility and growth.</p></div>
+            <div class="service-card"><h3>SEO & Marketing</h3><p>Boost your website and business presence with effective SEO and marketing strategies.</p></div>
+            <div class="service-card"><h3>Graphic Design</h3><p>Creative design for logos, banners, social media, and promotional content.</p></div>
+            <div class="service-card"><h3>Content Creation</h3><p>Professional content writing, blogs, and social media content tailored to your audience.</p></div>
+            <div class="service-card"><h3>Online Support</h3><p>Reliable support and consulting to help manage your online presence effectively.</p></div>
+            <div class="service-card"><h3>Business Strategy</h3><p>Custom strategy plans to grow and scale your personal or business projects.</p></div>
+            <div class="service-card"><h3>Personal Coaching</h3><p>Guidance for career, entrepreneurship, and digital opportunities for individuals.</p></div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="mailto:toriqulislamrafi@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Toriqul Islam Rafi (TL). All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
